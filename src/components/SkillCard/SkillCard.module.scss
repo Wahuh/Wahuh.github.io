@@ -1,0 +1,20 @@
+.SkillCard {
+
+}
+
+.Title {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    color: rgba(0,0,0,.84);
+}
+
+.Tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // align-content: space-between;
+}
+
+.Details {
+    margin-bottom: 0.5rem;
+}

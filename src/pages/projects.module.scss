@@ -1,0 +1,47 @@
+@media screen and (max-width: 499px) {
+    .ProjectsList {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .ProjectsList {
+        max-width: 500px;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .ProjectsList {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .ProjectsList {
+        max-width: 600px;
+    }
+}
+
+.ProjectsList {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 1rem;
+}
+
+.Projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

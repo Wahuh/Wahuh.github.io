@@ -1,0 +1,21 @@
+.Collapse {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    .Summary {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        user-select: none;
+        cursor: pointer;
+        p {
+            font-weight: 500;
+        }
+        svg {
+            margin-left: 0.25rem;
+            height: 1.125rem;
+            width: 1.125rem;
+            fill: #ad0057;
+        }
+    }
+}

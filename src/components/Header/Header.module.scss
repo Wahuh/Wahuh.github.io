@@ -1,0 +1,118 @@
+@import "../../common/colors";
+
+@media screen and (max-width: 767px) {
+    .Header {
+        bottom: 0;
+        box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14);
+
+        .Nav {
+            flex-direction: row;
+            flex: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .Header {
+        left: 0;
+        height: 100vh;
+
+        .Nav {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .Header {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+        .Nav {
+            flex-direction: row;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .Header {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+
+        .Nav {
+            flex-direction: row;
+            width: 25%;
+        }
+    }
+}
+
+.Header {
+    background-color: $nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 3.5rem;
+    width: 100%;
+    z-index: 2;
+    .Nav {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+
+
+            .NavLink {
+                text-decoration: none;
+                color: $nav-link;
+                flex: 1;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            .NavLink::after {
+                content: "";
+                opacity: 0;
+                background-color: $nav-link-selected;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 4px;
+                width: 100%;
+                will-change: left, right;
+                transition: left 200ms ease-out;
+                transition: right 200ms ease-out;
+                transition: opacity 200ms ease-out;
+            }
+            .Selected {
+                color: $nav-link-selected;
+            }
+            .Selected::after {
+                content: "";
+                opacity: 1;
+                background-color:#CF0068;
+                bottom: 0;
+                left: 0;
+            }
+
+    }
+}
+
+.Indicator {
+    background-color: #CF0068;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    will-change: left, right;
+    width: 20px;
+    transition: left 200ms ease-out;
+    transition: right 200ms ease-out;
+}

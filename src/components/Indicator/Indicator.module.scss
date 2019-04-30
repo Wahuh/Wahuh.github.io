@@ -1,0 +1,11 @@
+.Indicator {
+    background-color: #CF0068;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    will-change: left, right;
+    width: 20px;
+    transition: left 200ms ease-out;
+    transition: right 200ms ease-out;
+}

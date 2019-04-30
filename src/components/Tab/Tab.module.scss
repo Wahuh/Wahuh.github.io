@@ -1,0 +1,13 @@
+.Tab {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.Indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+    will-change: left, right;
+}

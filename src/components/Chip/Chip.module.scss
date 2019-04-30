@@ -1,0 +1,16 @@
+.Chip {
+    font-size: 0.875rem;
+    color: #3b4351;
+    // background-color: rgb(238, 240, 243);
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.375rem;
+    margin-bottom: 0.375rem;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    transition: background-color 200ms ease-out;
+    cursor: pointer;
+}
+
+.Chip:hover {
+    background-color: rgba(0, 0, 0, 0.08)
+}

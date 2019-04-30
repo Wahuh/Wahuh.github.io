@@ -1,0 +1,14 @@
+.DemoLink {
+    background-color: #CF0068;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 200ms ease-out;
+}
+
+.DemoLink:hover {
+    background-color: #ad0057;
+}
