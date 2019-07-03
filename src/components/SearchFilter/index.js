@@ -3,51 +3,10 @@ import SearchBar from "../SearchBar";
 import SkillCard from "../SkillCard";
 import Mark from "mark.js";
 import styles from "./SearchFilter.module.scss";
+import skills from "../../data/skillsData";
 
-const skills = {
-    "technical": [
-      {
-        "name": "JavaScript",
-        "details": [
-          "I use ES6 and later versions"
-        ],
-        "tags": 
-          ["react", "jsx", "koa", "react-router", "redux", "redux-saga", "axios", "mongoose", "express", "mobx", "material-ui", "jquery", "webpack", "socket.io", "jest", "enzyme", "supertest", "gatsby", "parcel"]
-      },
-  
-      {
-        "name": "CSS",
-        "details": [
-          "can implement any design in css from any website",
-          "comfortable writing css from scratch to implement features such as modals.",
-          "happy to use css libraries as well."
-        ],
-        "tags": ["sass", "bootstrap", "css modules"]
-      },
-      {"name": "HTML", "tags": ["html5"]},
-      {"name": "C#", "tags": ["asp.net"]},
-      {"name": "SEO", "details": []},
-      {"name": "Accessibility", "details": []},
-  
-      {
-        "name": "Testing", 
-        "details": [
-          "Unit testing", 
-          "Integration testing", 
-        ]
-      },
-      {"name": "Python", "tags": ["flask", "pandas"]},
-      {"name": "SQL", "tags": ["MySQL", "SQLite", "SQLAlchemy"]},
-      {"name": "Databases", "tags": ["mysql"]},
-      {"name": "Command Line", "tags": []},
-      {"name": "Git", "tags": []},
-      {"name": "Wordpress", "tags": []}
-    ],
-    "creative": [],
-    "marketing": []
-  }
-  //string.startsWith(query) || 
 const match = (query, string) => string.includes(query);
+
 class SearchFilter extends Component {
     state = {
         query: ""
@@ -117,11 +76,11 @@ class SearchFilter extends Component {
                         <>
                             <h2>Technical</h2>
                                 {skills.technical.map(skill => <SkillCard key={skill.name} skill={skill} />)}
-                            <h2>Creative</h2> 
+                            <h2>Creative</h2>
+                                {skills.creative.map(skill => <SkillCard key={skill.name} skill={skill} />)}
                         </>
                     )}
                 </div>
-
             </>
         );
     }

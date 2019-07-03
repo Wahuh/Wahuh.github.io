@@ -27,6 +27,12 @@ class ProjectCard extends Component {
         const { name, subtitle, description, githubLink, demoLink, features, tags } = project;
         return (
             <Card animationClassName={render ? styles.Animate : styles.Hide}>
+                <CardMedia>
+                    <video className={styles.Video} loop autoPlay>
+                        <source src={video} type="video/webm" />
+                    </video>
+                </CardMedia>
+
                 <CardHeader>
                     <h2 className={styles.Title}>{name}</h2>
                     <h3 className={styles.Subtitle}>
@@ -34,11 +40,7 @@ class ProjectCard extends Component {
                     </h3>
                 </CardHeader>
 
-                <CardMedia>
-                    <video className={styles.Video} loop autoPlay>
-                        <source src={video} type="video/webm" />
-                    </video>
-                </CardMedia>
+
 
                 <CardBody>
                     <section className={styles.Section}>

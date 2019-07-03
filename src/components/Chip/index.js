@@ -3,7 +3,7 @@ import styles from "./Chip.module.scss";
 
 const Chip = ({ text }) => (
     <span className={styles.Chip}>
-        <p>{text}</p>
+        <small>{text}</small>
     </span>
 )
 

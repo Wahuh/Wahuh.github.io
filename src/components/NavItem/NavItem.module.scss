@@ -1,0 +1,49 @@
+@import "../../common/colors";
+
+.NavItem {
+  text-decoration: none;
+  color: $nav-link;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+//   position: relative;
+}
+
+.NavItem:first-child::after {
+  content: "";
+  opacity: 0;
+  background-color: $nav-link-selected;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  will-change: left, right;
+  transition: left 200ms ease-out;
+  transition: right 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+.Selected {
+  color: $nav-link-selected;
+}
+.Selected::after {
+  content: "";
+  opacity: 1;
+  background-color: #cf0068;
+  bottom: 0;
+  left: 0;
+}
+
+.Indicator {
+  background-color: #cf0068;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  will-change: left, right;
+  width: 20px;
+  transition: left 200ms ease-out;
+  transition: right 200ms ease-out;
+}
