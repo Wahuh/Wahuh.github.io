@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
@@ -12,4 +12,4 @@ const IndexPage = () => {
   )
 } 
 
-export default IndexPage
+export default ContactPage
