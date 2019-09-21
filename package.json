@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "classnames": "^2.2.6",
+    "emotion-theming": "^10.0.19",
     "gatsby": "^2.13.1",
     "gatsby-image": "^2.2.4",
     "gatsby-plugin-manifest": "^2.2.1",
@@ -12,13 +14,18 @@
     "gatsby-plugin-react-helmet": "^3.1.0",
     "gatsby-plugin-sass": "^2.1.0",
     "gatsby-plugin-sharp": "^2.2.2",
-    "gatsby-source-filesystem": "^2.1.2",
+    "gatsby-source-filesystem": "^2.1.5",
+    "gatsby-transformer-json": "^2.2.2",
     "gatsby-transformer-sharp": "^2.2.1",
+    "lodash.throttle": "^4.1.1",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "rebass": "^4.0.5",
+    "sanitize.css": "^11.0.0",
+    "typed.js": "^2.0.10"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
