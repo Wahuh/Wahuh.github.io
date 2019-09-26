@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "name": "Slothy.io",
+      "subtitle": "Real-time task management and chat app inspired by Trello and Discord.",
+      "description": "Create groups, invite friends or colleagues. Registration is required but you can sign up with a dummy email or delete your account after trying out the app.",
+      "githubUrl": "https://github.com/Wahuh/slothy.io",
+      "demoUrl": "",
+      "features": ["Scale", "asdsad", "adasd"],
+      "tags": [
+        "react",
+        "redux",
+        "redux-saga",
+        "mongoose",
+        "express",
+        "socket.io",
+        "webpack",
+        "sass"
+      ]
+    },
+
+    {
+      "name": "Topical News",
+      "subtitle": "A Reddit-style content aggregation, sharing and discussion site",
+      "description": "Create groups, invite friends or colleagues. Registration is required but you can delete your account after trying out the app",
+      "githubUrl": "https://github.com/Wahuh/topical-news",
+      "demoUrl": "https://topical-news.netlify.com/",
+      "features": [],
+      "tags": ["react", "mobx", "sass", "Material-UI"]
+    },
+
+    {
+      "name": "Topical News api",
+      "subtitle": "Backend for handling news requests",
+      "description": "Create groups, invite friends or colleagues. Registration is required but you can delete your account after trying out the app",
+      "githubUrl": "https://github.com/Wahuh/topical-news-api",
+      "demoUrl": "https://speedwagon-server.herokuapp.com/api",
+      "features": [],
+      "tags": ["react", "mobx", "sass", "Material-UI"]
+    },
+
+    {
+      "name": "Umineko",
+      "subtitle": "Hiragana and Katakana learning helper",
+      "description": "Create groups, invite friends or colleagues. Registration is required but you can delete your account after trying out the app",
+      "githubUrl": "",
+      "demoUrl": "",
+      "features": [],
+      "tags": ["react", "mobx", "sass", "Material-UI"]
+    },
+
+    {
+      "name": "Remind Me",
+      "subtitle": "Do you forget things? Here's a PWA for sending yourself reminders.",
+      "description": "Create groups, invite friends or colleagues. Registration is required but you can delete your account after trying out the app",
+      "githubUrl": "https://github.com/Wahuh/remind-me",
+      "demoUrl": "https://wahuh.github.io/remind-me/",
+      "features": [],
+      "tags": ["react", "css", "service workers"]
+    }
+  ]
+}
