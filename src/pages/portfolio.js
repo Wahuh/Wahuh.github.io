@@ -1,18 +1,33 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React, { useState } from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "../components/Layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/common/Layout'
+import SEO from '../components/seo'
+import ProjectsList from '../components/projects/ProjectsList'
 
-const PortfolioPage = () => {
-  const [s, setS] = useState(5);
+const PortfolioPage = ({ data }) => {
+  const { projects } = data.portfolioJson
   return (
     <Layout>
       <SEO title="Home" />
-      <Link to="/page-2/">Go to page 2</Link>
+      <ProjectsList projects={projects} />
     </Layout>
   )
-} 
+}
+
+export const PortfolioQuery = graphql`
+  query PortfolioQuery {
+    portfolioJson {
+      projects {
+        name
+        subtitle
+        description
+        githubUrl
+        demoUrl
+        tags
+      }
+    }
+  }
+`
 
 export default PortfolioPage
