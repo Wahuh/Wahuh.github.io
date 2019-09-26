@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../../NavBar'
+import NavBar from '../NavBar'
 import classNames from 'classnames'
 
 import styles from './Navigation.module.scss'

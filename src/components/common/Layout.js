@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         <NavBar />
         <HamburgerButton isOpen={isOpen} onClick={handleOpen} />
       </Header>
-      <Navigation isOpen={isOpen} />
+      {/* <Navigation isOpen={isOpen} /> */}
       <main>{children}</main>
     </ThemeProvider>
   )
